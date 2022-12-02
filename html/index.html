@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome kit code -->
+    <script
+      src="https://kit.fontawesome.com/7fb2d5bac5.js"
+      defer
+      crossorigin="anonymous"></script>
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- linking main style page //index.css -->
+    <link rel="stylesheet" href="../css/index.css" />
+
+    <!-- linking main js page -->
+    <script src="../js/index.js" type="module" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header-section">
+        <div class="header-section-left">
+          <span><i class="fa-brands fa-soundcloud"></i></span>
+          <span>Sound</span>
+          <button class="sound-control-btn btn">OFF</button>
+          <audio src="../assets/bg-audio.mp3" class="bg-audio" loop></audio>
+        </div>
+
+        <div class="nav-toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+      <div class="recognition-banner">
+        award honors
+        <img src="" alt="" />
+      </div>
+      <nav class="navbar">
+        <div class="nav-intro">
+          <h1 class="special-text">R</h1>
+          <h3>Rishi</h3>
+          <p>Web developer</p>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="/about">About</a></li>
+          <hr />
+          <li class="nav-link"><a href="/mySkills">My Skills</a></li>
+          <hr />
+          <li class="nav-link"><a href="/work">Work</a></li>
+          <hr />
+          <li class="nav-link"><a href="/contact">Contact</a></li>
+          <hr />
+          <li class="nav-link"><a href="/blog">Blog</a></li>
+          <hr />
+          <li class="nav-link" class="nav-link social-links">
+            <a href="https://linkedin.com" id="linkedin" class="social-link"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com" id="github" class="social-link"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://facebook.com" id="facebook" class="social-link"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com" id="instagram" class="social-link"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <hr />
+        </ul>
+      </nav>
+      <section class="main-content-section show">
+        <section class="home-section">
+          <h1 class="intro">
+            <!-- Hi, <br />
+          I'm <span class="special-text">R</span>ishi, <br />
+          web developer -->
+          </h1>
+
+          <p>Full Stack Developer / Software Engineering Student</p>
+          <button class="btn contact-btn">Contact me!</button>
+
+          <div class="scroll-down scroll-down-left">
+            <span>scroll down</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div class="scroll-down scroll-down-right">
+            <span>scroll down</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </section>
+        <hr />
+
+        <section class="portfolio-section">
+          <h1 class="portfolio-heading">My PortFolio</h1>
+          <p class="portfolio-text">
+            A small gallery of recent projects chosen by me.I've done them all
+            together with amazing people from companies around the globe.It's
+            only a drop in the ocean compared to the entire list. Interested to
+            see some more?Visit <a href="">my work page</a>
+          </p>
+          <button class="btn see-more-btn">See more!</button>
+          <div class="top-works-cards card-items"></div>
+        </section>
+        <hr />
+
+        <section class="about-section">
+          <h1 class="about-heading">My, Myself & I</h1>
+          <p class="about-text">
+            I'm a Front-End Developer located in Kathmandu,Nepal.I have a
+            serious passion for UI effects,animations and creating intuitive,
+            dynamic user experiences.
+          </p>
+          <p class="about-text">
+            Well-organized person,problem solver, independent developer with
+            high attention to detail.Fan of cricket,football,movies,travelling
+            and outing.
+          </p>
+          <p class="about-text">
+            Interested in the entire frontend spectrum and working on abmitious
+            projects with positive people
+          </p>
+          <button class="btn about-section-btn">
+            Let's make something special.
+          </button>
+          <div class="skill-sphere-wrapper">
+            <div class="skill-sphere"></div>
+          </div>
+        </section>
+        <hr />
+        <section class="blog-section">
+          <h1 class="blog-heading">BLOG</h1>
+          <div class="blog-wrapper"></div>
+          <button class="btn see-articles-btn">
+            <a href="/">See All Articles...</a>
+          </button>
+        </section>
+        <section class="contact-section">
+          <article class="left-article">
+            <h1 class="contact-heading">Contact me</h1>
+            <p class="contact-text">
+              I’m interested in freelance opportunities – especially ambitious
+              or large projects. However, if you have other request or question,
+              don’t hesitate to use the form.
+            </p>
+            <form action="/" class="contact-form">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Subject" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="7"
+                placeholder="Message"></textarea>
+            </form>
+            <button type="submit" class="submit-contact-btn btn">
+              Send message!
+            </button>
+          </article>
+          <article class="right-article">
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  class="gmap_iframe"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=kathmandu&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe
+                ><a href="https://formatjson.org/">format json</a>
+              </div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 600px;
+                  height: 400px;
+                }
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 600px;
+                  height: 400px;
+                }
+                .gmap_iframe {
+                  width: 600px !important;
+                  height: 400px !important;
+                }
+              </style>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
